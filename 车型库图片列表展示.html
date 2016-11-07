@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <!-- 兼容IE浏览器-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 高速浏览模式-->
+    <meta name="renderer" content="webkit">
+    <!-- 移动设计优先（响应式）-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>车型库图片列表展示</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/car_pic.css"/>
+    <!-- 基于jQuery实现的 -->
+    <script src="js/jquery-1.11.3.js"></script>
+    <!-- Bootstrap插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 
+        IE8版本之前的（6，7，8）不支持HTML5的新标签和css3的媒体查询
+        *html5shiv.min.js
+            专门兼容IE6/7/8版本的HTML5新标签
+        *respond.min.js
+            专门兼容IE6/7/8版本的CSS3提供的媒体查询
+    -->
+    <!--[if lt IE 9]>
+    <!--<script src="BOOTSTRAP/js/html5shiv.min.js"></script>-->
+    <!--<script src="BOOTSTRAP/js/respond.min.js"></script>-->
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <!--头部-->
+    <div class="head">
+        <!--导航栏-->
+        <nav class="head_bar" role="navigation">
+            <div>
+                <ul class="head_nav">
+                    <li class="s_lf_1">你的位置:</li>
+                    <li><a href="#">车型库</a></li>
+                    <li>&gt;</li>
+                    <li><a href="#">图片</a></li>
+                    <li>&gt;</li>
+                    <li><a href="#">本田</a></li>
+                    <li>&gt;</li>
+                    <li><a href="#">雅阁</a></li>
+                    <li>&gt;</li>
+                    <li><a href="#">2016款 混动 2.0L锐尊版</a></li>
+                    <li>&gt;</li>
+                    <li><a href="#">外观</a></li>
+                </ul>
+            </div>
+            <div class="head_rg">
+                <ul class="head_nav">
+                    <li class="s_lf"><a href="#">雅阁频道</a></li>
+                    <li class="s_lf">|</li>
+                    <li class="s_lf"><a href="#">报价</a></li>
+                    <li class="s_lf"><a href="#">视频</a></li>
+                    <li class="s_lf"><a href="#">文章</a></li>
+                    <li class="s_rg s_lf"><a href="#">参数配置</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--主体-->
+    <div class="middle">
+        <div class="lf_pic">
+            <div class="lf_pic_word">
+                <ul class="nav nav-tabs">
+                    <li>筛选：</li>
+                    <li><a href="#">全部</a></li>
+                    <li><a href="#">整车外观</a></li>
+                    <li><a href="#">车头</a></li>
+                    <li><a href="#">车身</a></li>
+                    <li><a href="#">中控</a></li>
+                    <li><a href="#">座椅</a></li>
+                    <li><a href="#">车厢</a></li>
+                    <li><a href="#">储物空间</a></li>
+                    <li><a href="#">驾乘空间</a></li>
+                    <li><a href="#">后备箱</a></li>
+                    <li><a href="#">发动机</a></li>
+                    <li><a href="#">底盘</a></li>
+                    <li><a href="#">细节</a></li>
+                </ul>
+                <div class="lit_lable">
+                    <a href="#">返回原图</a>
+                </div>
+            </div>
+            <div class="lf_pic_pic">
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_rg img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+                <div class="img_lf">
+                    <div>
+                        <img src="img/car_list_1.jpg" />
+                    </div>
+                    <p>整车外观</p>
+                </div>
+            </div>
+        </div>
+        <div class="rg_word">
+            <div>
+                <b class="b_line">|</b>
+                <b>按分类看图</b>
+            </div>
+            <ul class="nav">
+                <li><a href="#"><i class="dot"></i>外观(531张)</a></li>
+                <li><a href="#"><i class="dot"></i>内饰(531张)</a></li>
+                <li><a href="#"><i class="dot"></i>空间(531张)</a></li>
+                <li><a href="#"><i class="dot"></i>细节(531张)</a></li>
+                <li><a href="#"><i class="dot"></i>图解(531张)</a></li>
+                <li><a href="#"><i class="dot"></i>评测(531张)</a></li>
+                <li><a href="#"><i class="dot"></i>相关(531张)</a></li>
+                <li><a href="#"><i class="dot"></i>车展(531张)</a></li>
+                <li><a href="#" style="width: 100%;"><i class="dot"></i>车型详解(142个看点)</a></li>
+            </ul>
+            <div class="one_line"></div>
+            <div class="car_type">2016款 混动 2.0L 锐尊版</div>
+            <div class="car_price">易行最低价：<span>24.68万</span></div>
+            <div>
+                <span class="car_label">询底价</span>
+                <span class="car_label">预约看车</span>
+            </div>
+            <div class="car_zan" >
+                <div class="car_zan_img">
+                    <img src="img/zan.png"/>
+                </div>
+                <span>34</span>
+            </div>
+            <div class="car_zan_word">给照片点赞</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

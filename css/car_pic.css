@@ -1,0 +1,406 @@
+body {
+    background: #111;
+    font: 12px "微软雅黑";
+    color: #666;
+    height: 725px;
+}
+
+/*头部*/
+.head_bar .head_nav > li > a:hover, .head_bar .head_nav > li > a:focus {
+    color: #EB6100;
+    text-decoration: none;
+}
+
+.container {
+    width: 1000px;
+    padding: 0;
+}
+
+.head_bar {
+    min-height: 0;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #030303;
+}
+
+.head_bar .head_nav > li > a {
+    padding: 0;
+    line-height: normal;
+    color: #999;
+}
+
+.head_nav li {
+    padding: 9px 1px;
+    float: left
+}
+
+.head_nav {
+    list-style: none;
+    padding: 0;
+}
+
+.s_lf_1 {
+    margin-left: 13px;
+    color: #999;
+}
+
+.s_lf {
+    margin-left: 5px;
+}
+
+.s_rg {
+    margin-right: 26px;
+}
+
+.head_rg {
+    float: right
+}
+
+/*主体*/
+/*左边*/
+/*车型库图片展示*/
+.lf_pic {
+    width: 800px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.lf_pic .carousel img {
+    margin-left: 19px;
+}
+
+.list {
+    width: 100px;
+    line-height: 30px;
+    background-color: #000;
+    opacity: 0.5;
+    float: right;
+    text-align: center;
+    height: 30px;
+    margin-right: 300px;
+}
+
+.list a {
+    color: #fff;
+}
+
+.left a:hover {
+    margin-left: 0;
+}
+
+.right b:hover {
+    margin-right: 0;
+}
+
+.carousel-control {
+    width: 19px;
+}
+
+.carousel {
+    background: url("../img/car_show_1.gif");
+}
+
+.carousel:hover {
+    cursor: e-resize;
+}
+
+/*车库图片*/
+.div1 {
+    width: 800px;
+    position: absolute;
+}
+
+.lf {
+    float: left;
+    width: 19px;
+    height: 535px;
+    background: #000;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.rg {
+    float: right;
+    width: 19px;
+    height: 535px;
+    background: #000;
+    position: absolute;
+    z-index: 2;
+    opacity: .5;
+    right: 0;
+}
+
+.div2 {
+    width: 800px;
+    overflow: hidden;
+    float: left;
+    height: 535px;
+    position: absolute
+}
+
+.div1 ul {
+    width: 3810px;
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    left: -743px;
+}
+
+.div1 ul li {
+    float: left;
+    width: 762px;
+    height: 535px;
+    background: #000000;
+    opacity: .5;
+}
+
+.div1 ul li.active {
+    opacity: 1;
+}
+
+/**/
+/*车型库图片列表展示*/
+.lf_pic .nav {
+    border: none;
+    margin: 5px 0;
+}
+
+.lf_pic .nav li {
+    margin-left: 10px;
+    color: #999;
+}
+
+.lf_pic .nav li a {
+    padding: 0;
+    border: 0;
+    color: #999;
+    font: 12px "微软雅黑";
+}
+
+.lf_pic .nav li a:hover, .lf_pic .nav li a:focus {
+    color: #EB6100;
+    background-color: transparent;
+}
+
+.lf_pic_pic {
+    width: 790px;
+    height: 500px;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.lf_pic_word {
+    width: 100%
+}
+
+/*小标签*/
+.container {
+    position: relative;
+}
+
+.lit_lable {
+    position: absolute;
+    left: 700px;
+    top: 40px;
+    width: 100px;
+    height: 30px;
+    background-color: #030303;
+    text-align: center;
+    vertical-align: middle;
+    opacity: 0.8;
+    z-index: 3;
+}
+
+.lit_lable a {
+    font: 14px "微软雅黑";
+    color: #fff;
+    line-height: 30px;
+}
+
+.lit_lable a:hover, .lit_lable a:focus {
+    color: #EB6100;
+    text-decoration: none;
+}
+
+/**/
+/*滚动条*/
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #080808;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #999;
+}
+
+/**/
+.lf_pic_pic > div {
+    float: left;
+}
+
+.lf_pic_pic div p {
+    margin: 10px 60px 15px;
+    font: 14px "微软雅黑";
+    color: #999;
+}
+
+.lf_pic .img_lf {
+    margin-left: 10px;
+}
+
+.lf_pic .img_rg {
+    margin-right: 10px;
+}
+
+.lf_pic .lf_pic_pic div div {
+    width: 180px;
+    height: 145px;
+}
+
+.lf_pic .lf_pic_pic div div:hover img {
+    width: 180px;
+    height: 145px;
+    border: 2px solid #EB6100;
+    display: block
+}
+
+/*右边*/
+.rg_word {
+    width: 200px;
+    margin: 0;
+    padding: 0 0 0 10px;
+    float: right;
+    background: #1e1e1e;
+    height: 535px;
+}
+
+.rg_word b {
+    color: #666666;
+    font: 18px "微软雅黑";
+    margin: 15px 0 10px;
+    display: inline-block;
+}
+
+.rg_word .b_line {
+    color: #EB6100;
+}
+
+.rg_word ul li a {
+    padding: 10px 3px;
+    color: #cccccc;
+    width: 50%;
+    float: left
+}
+
+.rg_word ul li a:hover, .rg_word ul li a:focus {
+    color: #EB6100;
+    background-color: transparent;
+}
+
+.dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #b6b6b6;
+    vertical-align: middle;
+    margin-right: 8px;
+    position: relative;
+}
+
+.rg_word ul li a:hover .dot, .rg_word ul li a:focus .dot {
+    background: #EB6100;
+}
+
+/*分割线*/
+.one_line {
+    width: 175px;
+    height: 1px;
+    background: #3d3d3d;
+    margin: 28px 0 25px 2px;
+}
+
+/**/
+.car_type {
+    color: #dddddd;
+    font: 15px "微软雅黑";
+    margin-bottom: 20px;
+}
+
+.car_price {
+    margin-bottom: 20px;
+}
+
+.car_price span {
+    color: #EB6100;
+    font: 14px "微软雅黑";
+}
+
+.car_label {
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    background: #EB6100;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+
+.car_label:hover {
+    cursor: pointer;
+}
+
+.car_zan {
+    text-align: center;
+    overflow: hidden
+}
+
+.car_zan:hover {
+    cursor: pointer;
+}
+
+.car_zan span {
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    width: 49%;
+    text-align: left;
+    float: right;
+    height: 35px;
+    line-height: 35px;
+}
+
+.car_zan_word {
+    text-align: center;
+    margin: 25px 0 40px;
+}
+.car_zan_img {
+    text-align: right;
+    float: left;
+    background: url("../img/zan.png");
+    width: 34px;
+    height: 34px;
+    margin-left: 53px;
+}
+.car_zan:hover .car_zan_img{
+    background: url("../img/zan_1.png");
+}
+.car_zan:hover span{
+    color:  #eb6100;
+}

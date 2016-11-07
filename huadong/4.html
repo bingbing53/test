@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index2_v4.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div class="filter unselect" id="priceFilter">
+    <div class="filter-hd">
+        <span class="filter-text">价<i></i>格：</span>
+    </div>
+    <div class="filter-bar" style="visibility: visible;">
+        <div class="filter-bar-bg"></div>
+        <div class="filter-bar-progress" style="left: 10px; width: 376.516px;"></div>
+        <i class="filter-handle filter-handle-l"  onmousedown="dragDown(event,this);"></i>
+        <i class="filter-handle filter-handle-r" style="left: 376.516px;" onmousedown="dragDown(event,this);"></i>
+        <i class="filter-label" style="left: 168.258px;">63万以下<em class="jt"></em></i>
+    </div>
+</div>
+</body>
+<script>
+var drag = new Object();
+//var dataPay = new Object();
+function dragDown(e,obj){
+	e = e || window.event;//判断浏览器
+	drag.x = e.clientX;//获取x轴初始值
+	drag.div = obj;//获取当前节点
+	drag.w = obj.parentNode.clientWidth;//获取父级宽度
+	drag.left = drag.div.offsetLeft;//获取当前元素位置
+	drag.class = obj.className;//获取当前元素class值
+	drag.bg = obj.parentNode.querySelector('.filter-bar-progress');//获取背景节点
+	drag.tab = obj.parentNode.querySelector('.filter-label');//获取金额节点
+	drag.l = obj.parentNode.querySelector('.filter-handle-l').offsetLeft;//左侧
+	drag.r = obj.parentNode.querySelector('.filter-handle-r').offsetLeft;//右侧
+	drag.y = drag.w/12;
+	document.onmousemove = dragMove;//执行拖动事件
+	document.onmouseup = dragUp;//鼠标松开清楚拖动事件
+	drag.pay = ['0','5','10','20','30','40','50','60','70','80','90','100','100'];
+}
+function dragMove(e){
+	e = e || window.event;
+	drag.X = e.clientX;//获取x轴拖动后的值
+	drag.lef = Number(drag.left) + Number(drag.X-drag.x);//元素拖动后位置的值
+	drag.bgW = drag.bg.clientWidth;//获取背景宽度
+	if(drag.lef>=0&&drag.lef<=parseInt(drag.w-20)){//限制拖动元素
+		if(drag.class.match('filter-handle-l')){//正则表达判断
+			if(drag.lef>=drag.r){
+				drag.bg.style.cssText = 'left:'+parseInt(drag.r+11)+'px;width:'+parseInt(drag.lef-drag.r)+'px';
+				drag.lab = parseInt(drag.r+11) + parseInt(drag.lef-drag.r-30)/2;
+				drag.ys = Math.ceil(drag.r/drag.y);
+				drag.ye = Math.ceil(drag.lef/drag.y);
+			}else{
+				drag.bg.style.cssText = 'left:'+parseInt(drag.lef+11)+'px;width:'+parseInt(drag.r-drag.lef)+'px';
+				drag.lab = parseInt(drag.lef+11) + parseInt(drag.r-drag.lef-30)/2;
+				drag.ys = Math.ceil(drag.lef/drag.y);
+				drag.ye = Math.ceil(drag.r/drag.y);
+			}
+			
+		}else{
+			if(drag.lef<=drag.l){
+				drag.bg.style.cssText = 'left:'+parseInt(drag.lef+11)+'px;width:'+parseInt(drag.l-drag.lef)+'px';
+				drag.lab = parseInt(drag.lef+11) + parseInt(drag.l-drag.lef-30)/2;
+				drag.ys = Math.ceil(drag.lef/drag.y);
+				drag.ye = Math.ceil(drag.l/drag.y);
+			}else{
+				drag.bg.style.width = parseInt(drag.lef-drag.l)+'px';
+				drag.lab = parseInt(drag.lef-drag.l-30)/2;
+				drag.ye = Math.ceil(drag.lef/drag.y);
+				drag.ys = Math.ceil(drag.l/drag.y);
+			}
+		}
+		drag.div.style.left = drag.lef + 'px';
+		drag.tab.style.left = drag.lab + 'px';
+		var iText;
+		if(drag.ye <='1'){iText='5万以下';}else if(drag.ys >'11'){iText='100万以上';}else{iText=drag.pay[drag.ys] +'-'+drag.pay[drag.ye]+'万';}
+		drag.tab.innerHTML = iText+ '<em class="jt"></em>';
+	}
+	console.log(drag)
+}
+function dragUp(e){
+	document.onmousemove = null;
+	document.onmouseup = null;
+	drag.l = drag.div.parentNode.querySelector('.filter-handle-l').offsetLeft;//左侧
+	drag.r = drag.div.parentNode.querySelector('.filter-handle-r').offsetLeft;//右侧
+}
+</script>
+</html>
