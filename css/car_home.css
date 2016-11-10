@@ -5,7 +5,46 @@
     padding: 0;
     font-family: "微软雅黑";
 }
-
+.footer{
+    position: relative;
+    z-index: 10;
+    height: 60px;
+    padding-top: 1px;
+}
+.total_pic{
+    width: 680px;
+    height: 62px;
+    margin-top: 22px;
+}
+.logo{
+    border-bottom:none;
+}
+/*浮动框*/
+div.comparison,div.feedback{
+    width:40px;
+    height: 50px;
+    float: right;
+    border: 1px solid #ededed;
+    background: #f5f5f5;
+    font-size: 14px;
+    text-align: center;
+}
+div.comparison:hover,div.feedback:hover{
+    border: 1px solid #EB6100;
+    background: #f5f5f5;
+}
+.float_frame div a{
+    color: #666;
+    line-height: 23px;
+    display: inline-block;
+}
+.float_frame{
+    width: 40px;
+    position: fixed;
+    bottom: 164px;
+    right: 380px;
+}
+/**/
 /*上*/
 .middle_up p {
     font: 18px "微软雅黑";
@@ -15,6 +54,7 @@
 
 .nav {
     list-style-type: none;
+    width: 1000px;
 }
 
 .nav li {
@@ -192,6 +232,7 @@ i.stretch_1 {
     margin-left: 4px;
     float: right;
     margin-top: 10px;
+    position: relative;
 }
 
 /*右上*/
@@ -331,9 +372,10 @@ i.stretch_1 {
 .brand ul li {
     float: left;
     background: #f5f5f5;
-    margin-bottom: 10px;
     padding-bottom: 5px;
     border: 2px solid #fff;
+    margin-left: 16.5px;
+    margin-top: 16.5px;
 }
 
 .brand ul li:hover {
@@ -347,11 +389,10 @@ i.stretch_1 {
     margin-bottom: 10px;
     padding-left: 5px;
 }
-
-.brand_r {
-    margin-right: 16px;
+.brand ul{
+    margin-left: -16.5px;
+    margin-top: -16.5px;
 }
-
 div.brand ul li p.index_f {
     font: bold 14px "微软雅黑";
     color: #000;
@@ -394,6 +435,7 @@ div.brand ul li p.index_f {
 
 .overflow_h {
     overflow: hidden;
+    margin-left: -40.5px;
 }
 
 .hotdeo > p > span {
@@ -408,12 +450,8 @@ div.brand ul li p.index_f {
     border: 1px solid #fff;
     padding-bottom: 5px;
     position: relative;
+    margin-left: 40.5px;
 }
-
-.deo_r {
-    margin-right: 40px;
-}
-
 .hotdeo ul li:hover {
     border-color: #eb6100
 }
@@ -567,6 +605,7 @@ div.brand ul li p.index_f {
     padding-left: 10px;
     overflow: hidden;
     color: #000;
+    margin-bottom: 10px;
 }
 
 .middle_m_r_t .lit_icon {
@@ -578,6 +617,8 @@ div.brand ul li p.index_f {
 .middle_m_r_t .lit_icon img {
     margin-top: 4px;
     margin-right: 10px;
+    width: 32px;
+    height: 32px;
 }
 
 .middle_m_r_t .lit_icon ul {
@@ -650,6 +691,7 @@ div.brand ul li p.index_f {
 
 .brand {
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 /*右下*/
@@ -742,14 +784,17 @@ div.brand ul li p.index_f {
 .middle_m_r_m .parameter {
     border: none;
     border-top: 1px solid #fff;
+    margin-left: 0;
+    margin-top: 0;
 }
-
 .middle_m_r_m .parameter li {
     border: none;
     height: 35px;
     line-height: 35px;
     margin-bottom: 0;
     text-align: center;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 .middle_m_r_m .parameter li:hover {
@@ -782,6 +827,7 @@ div.brand ul li p.index_f {
     cursor: pointer;
     font-size: 18px;
     margin-bottom: 10px;
+    margin-left: 5px;
 }
 .addr .icon_xia {
     display: inline-block;
@@ -855,7 +901,6 @@ div.brand ul li p.index_f {
 .middle_m_r_m .change ul .change_l img {
     width: 9px;
     height: 9px;
-    margin-top: 12px
 }
 
 .middle_m_r_m .change ul .change_m {
@@ -869,7 +914,6 @@ div.brand ul li p.index_f {
     color: #464646;
 }
 .middle_m_r_m .change ul .change_r img{
-    margin-top: 6px;
     margin-left: -4px;
     margin-right: 4px;
 }
@@ -1142,9 +1186,9 @@ div.brand ul li p.index_f {
     padding: 6px;
 }
 .middle_m_r_m .condition_car .table tr .table_list_1{
-    width: 175px;
+    width: 180px;
     display: inline-block;
-    margin-right: 120px;
+    margin-right: 115px;
 }
 .middle_m_r_m .condition_car .table tr .table_list_2{
     width: 120px;
@@ -1201,3 +1245,27 @@ div.brand ul li p.index_f {
     padding: 5px 1px;
     margin-right: 6px;
 }
+/* 价格滑动条 */
+.hotcar-bd-content-item .btn,.icon-message,.filter-handle,.filter-bar-bg,.filter-bar-progress,.rank-slide .emotion,.icon-rank,.icon-vs,.icon-arrow-l{background-image:url('http://www1.pcauto.com.cn/price/2014/dianping/images/sprite_index.png');background-repeat:no-repeat;}
+.filter-handle{position:absolute;top:26px;left: -8px;width:25px;height:22px;cursor:pointer;background:url("../img/money_l.png")}
+.filter-label{position:absolute;top:3px;left:286px;width:auto;height:auto;display:inline-block;padding:2px 10px;text-align:center;color: #eb6100;border:1px solid #eb6100;}
+.filter-label .jt{position:absolute;width:9px;height:6px;background:url("../img/money.png") no-repeat;bottom:-6px;left:50%;margin-left:-4px;}
+.filter-bar-bg{width:635px;height:5px;background: #cccccc;;}
+.filter-bar-progress{position:absolute;top:35px;left:10px;width:612px;height:5px;background:#259;overflow:hidden;}
+.filter{overflow:hidden;width:765px;height: 90px;background: #f5f5f5;}
+.filter-handle-r{position:absolute;top:29px;left:612px;background:url("../img/money_r.png")}
+.filter-text{font-size:16px;color:#000;display:inline-block;margin-left:5px;}
+.filter-text i{display:inline-block;width:15px;}
+.filter-hd{float:left;width:105px;padding:40px 0 0 0;margin-left: -8px;}
+.filter-hd .current{color:#fff;background:#259;text-decoration:none;width:40px;text-align:center;}
+.filter-hd .current:hover{color:#fff;}
+.filter-bar{position:relative;float:right;width:635px;padding-top:35px;margin-right:20px;visibility:hidden;}
+.filter-links{overflow:hidden;clear:both;padding-left:67px;padding-top:10px;}
+.filter-links .gray{float:left;margin-top:5px;height:30px;}
+.filter-links a{padding:0 4px;float:left;margin:5px 3px 0;color:#259;height:20px;line-height:20px;white-space:nowrap;}
+.filter-links a:hover{color:#fe6400;background:#ffeabd;text-decoration:none;}
+.filter-links a.s{background:#259;color:#fff;}
+.filter-links a.null,.filter-links a.null:hover{background:none;cursor:default;color:#777;}
+.filter-hd .current,.filter-bar-progress{background:#eb6100;}
+.filter span{font-size: 16px;margin-top: 12px;margin-left: 13px;display: inline-block;}
+/**/

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eg1</title>
+    <style>
+        /*浮动框*/
+        div.comparison,div.feedback{
+            width:40px;
+            height: 50px;
+            float: right;
+            border: 1px solid #ededed;
+            background: #f5f5f5;
+            font-size: 14px;
+            text-align: center;
+        }
+        div.comparison:hover,div.feedback:hover{
+            border: 1px solid #EB6100;
+            background: #f5f5f5;
+        }
+        .float_frame div a{
+            color: #666;
+            line-height: 23px;
+            display: inline-block;
+        }
+        .float_frame{
+            width: 40px;
+            position: fixed;
+            bottom: 200px;
+            left: 1600px;
+        }
+        /**/
+        .d1{
+            width: 1500px;
+            height: 1000px;
+            background: #cccccc;
+        }
+        .d2{
+            width: 1500px;
+            height: 1000px;
+            background: #f0ad4e;
+        }
+    </style>
+</head>
+<body>
+<div class="d1">
+
+</div>
+<div class="d2">
+
+</div>
+<!--浮动框-->
+<div style="" class="float_frame">
+    <div class="comparison"><a href="#">车型对比</a></div>
+    <div class="feedback"><a href="#">意见反馈</a></div>
+</div>
+</body>
+</html>
